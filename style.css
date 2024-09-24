@@ -30,11 +30,12 @@ body,html{
     position: fixed;
     width: 100%;
     
+    
     top: 0px;
     z-index: 1000;
     left: 0;
     display: block;
-    padding-bottom: 25px;
+    
     
   
 }
@@ -44,19 +45,9 @@ body,html{
     align-items: center;
     flex-direction: row;
     
-}
-.container{
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-
-}
-.container img{
-    width: 100%;
-    position: relative;
     
 }
+
 .container2{
     display: none;
 }
@@ -68,12 +59,23 @@ body,html{
 .left >div{
     left: 0;
 }
-.threeline svg{
-    margin-right: 18px;
+
+
+
+
+.ubereat{
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    height: 68px;
 }
-
-
-
+.uberheading img{
+    width: 89px;
+    height:16px ;
+    margin-top: 2px;
+    margin-left: 4px;
+    margin-right: 28px;
+}
 
 
 
@@ -131,7 +133,7 @@ body,html{
     line-height: 16px;
     letter-spacing: normal;
     padding: 8px 10px 8px 10px;
-    
+    align-items: center;
 
    
 }
@@ -139,87 +141,45 @@ body,html{
 .human svg{
     width: 16px;
     height: 16px;
-    
+    position: relative;
+    top: 2px;
     
 }
 .human{
     align-items: center;
     background:white;
-    
+    height: 36px;
+    width: 36px;
     padding: 6px 9px 4px 9px;
     text-align: center;
     border: 1px solid transparent;
-    border-radius: 50%;
+    border-radius: 500px;
+    white-space: nowrap;
 }
 .human{
     display: none;
 }
 
-@media(min-width:1016px){
-    .container img{
-        height: 100vh;
-        object-fit: cover;
-    }
-    
-    .sidebar{
-        
-        margin-top: -3px;
-        
-    }
-    .ubereat{
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 11px;
-        height: 56px;
-    }
-    .uberheading img{
-        width: 89px;
-        height:16px ;
-        margin-top: 2px;
-        margin-left: 4px;
-        margin-right: 28px;
+@media(min-width:1025px){
+    .threeline svg{
+        margin-right: 18px;
     }
     .sign{
         gap: 16px;
     }
+    .sidebar{
+        
+        margin-top: -4px;
+        
+    }
+    
+   
     
 }
 
 @media(max-width:1016px){
-    .container2{
-        display: block;
-        position: relative;
-    }
-    .container{
-        display: none;
-    }
-    .container2 img{
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-
-    }
-    .human{
-        display: block;
-        text-align: center;
-        align-items: center;
-        margin-top: -1px;
-    }
-    .ins{
-        display: none;
-    }
-    .ubereat{
-        align-items: center;
-        padding-left: 22px;
-        padding-right: 22px;
-    }
-    .uberheading img{
-        width:auto;
-        height: 16px;
-    }
-    .sign{
-        gap: 10px;
-    }
+   
+    
 }
 @media(max-width:412px){
     .ubereat{
@@ -251,32 +211,47 @@ body,html{
     }
     
 }
-.Main{
-    position: absolute;
-    z-index: 100;
+.main-aria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/Ubereat_2/Images/uberheader.png);
+    background-position: center center;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+   
+    
+}
+.main{
+
     box-sizing: border-box;
     color: black;
-   padding: 0 40px;
-   margin: 0 auto;
-   display: block;
-   
-   
+    padding: 0 40px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1024px;
+   position: absolute;
+   margin-top: 14px;
 
 }
 
-.order{
-    font-size: 26px;
+.order h1{
+    font-size: 52px;
+    width: 60%;
     line-height: 64px;
     letter-spacing: normal;
     font-weight: 700;
     font-family: 'Ubermovebold',sans-serif;
+    margin: 0;
    
     
 }
-.order h1{
-    
-}
+
 .linear{
     display: flex;
     gap:8px ;
@@ -319,6 +294,12 @@ body,html{
     width: 100%;
     max-width: 191px;
     
+    
+}
+.delivery >div{
+    position: relative;
+    
+    top: -1px;
 }
 .deliveryone{
     display: flex;
@@ -326,7 +307,7 @@ body,html{
 }
 .deliveryone .textsize input{
    align-items: center;
-   border:none ;
+  border: none;
     width: 90px;
     align-items: center;
 }
@@ -396,52 +377,55 @@ body,html{
     font-size: 14px;
     font-weight: 500;
 }
-@media(min-width:1685px){
+.linear{
+    height: 56px;
+}
+.order{
     
+    margin-bottom: 40px;
+}
+.textsize{
+    margin-top: 8px;
+}
+.text{
+    padding:2px ;
+}
+.loca::placeholder{
+    font-family: 'Ubermovetextmedium';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    
+}
+.delivery{
+    gap: 13px;
+
+}
+.deliveryone{
+    display: flex;
+    gap: 12.2px;
+}
+@media(min-width:1770px){
+    .main{
+       
+    }
 }
 @media(max-width:1024px){
     
 }
 @media(min-width:900px){
     .Main{
-        padding-top: 0;
         
-        top: 348px;
+        
+        
         /*padding-left: 40px;
         padding-right: 40px;*/
         
         
     }
-    .linear{
-        height: 56px;
-    }
-    .order{
-        max-width: 60%;
-        margin-bottom: 40px;
-    }
-    .textsize{
-        margin-top: 8px;
-    }
-    .text{
-        padding:2px ;
-    }
-    .loca::placeholder{
-        font-family: 'Ubermovetextmedium';
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: normal;
-        font-weight: 500;
-        color: rgb(102, 102, 102);
-        
-    }
-    .delivery{
-        gap: 13px;
-
-    }
-    .deliveryone{
-        display: flex;
-        gap: 12.2px;
-    }
+    
 }
 @media(max-width:900px){
 
@@ -451,10 +435,11 @@ body,html{
         align-items: center;
         padding-left: 16px;
         padding-right: 16px;
-        top: 104px;
+       
         
         
     }
+    
     .order{
         margin-bottom: 2px;
     }
@@ -550,7 +535,6 @@ body,html{
     
     
 }
-
 .smallscreen{
     display: flex;
     flex-direction: column;
@@ -635,22 +619,25 @@ body,html{
 
 
 /*lists of picture*/
+.top-height{
+    height: 80px;
+}
+
+@media(min-width:1025px){
 .listofpicture{
     display: flex;
     flex-direction: row;
     gap: 24px;
     width: 100%;
+    margin-bottom: -24px;
+    margin-right: -12px;
+    margin-left: -12px;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
     
-}
-.feed img{
-    width: 100%;
-    
-}
-.feed{
-    gap: 10px;
 }
 .listofpicture h2{
-    font-family: 'UberMoveBold';
+    font-family: 'UberMoveBold',sans-serif;
     margin-top: 4px;
     font-size: 28px;
     line-height: 36px;
@@ -660,26 +647,74 @@ body,html{
 }
 .listofpicture a{
     font-family: 'Ubermovetextmedium';
-    
+    margin-top: 8px;
+    display: block;
+    line-height: 20px;
     color: rgb(48, 48, 48);
-    
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: normal;
     font-weight: 500;
     
 }
+.feed img{
+    width: 100%;
+    left: 0;
+    top: 0;
+    
+    
+}
+.feed{
+    margin-left: 0%;
+    padding-right: 1px;
+    padding-left: 12px;
+    width: 33.33333333333333336%;
+    flex: none;
+    display: block;
+    margin-bottom: 24px;
+}
+
 .restaurant img{
     width: 100%;
-    
+    left: 0;
+    top: 0;
+}
+.restaurant{
+    margin-left: 0%;
+    padding-right: 1px;
+    padding-left: 1px;
+    width: 33.33333333333333336%;
+    flex: none;
+    display: block;
+    margin-bottom: 24px;
+    box-sizing: border-box;
 }
 .withuber img{
     width: 100%;
 }
-
-@media(min-width:900px){
-    .listofpicture{
-        max-width: 98.7%;
-        padding-top: 70px;
+.withuber{
+    margin-left: 0%;
+    padding-left: 1px;
+    padding-right: 12px;
+    width: 33.33333333333333336%;
+    flex: none;
+    display: block;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+}
+@media(min-width:1025px){
+    .cities-near{
+        padding: 0 40px;
+        min-width: 1024px;
+        max-width: 1920px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .near-img{
+        margin: 24px 0;
     }
 }
 @media(max-width:900px){
@@ -705,24 +740,35 @@ body,html{
     }
 }
 
+.bottom-height{
+    height: 80px;
+    display: block;
+}
 
 
-
+.near-me{
+    height: 80px;
+    display: block;
+}
 .near img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .me h3{
-    font-family: 'Ubermovebold';
+    font-family: 'Ubermovebold',sans-serif;
+    font-size: 36px;
     font-weight: 700;
     line-height: 44px;
     letter-spacing: normal;
+    margin: 0;
     
 }
 .me{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     
     
 }
@@ -732,19 +778,18 @@ body,html{
     line-height: 20px;
     cursor: pointer;
     font-weight: 500;
-    
+    cursor: pointer;
+    text-decoration: underline;
     letter-spacing: normal;
     font-family: 'Ubermovetextmedium';
 }
 
-.listout{
-    padding-left: 40px;
-    padding-right: 40px;
-}
 #list{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 24px;
+    margin-top: 24px;
 
 }
 #list div{
@@ -757,26 +802,7 @@ body,html{
     color: inherit;
     
 }
-.countr{
-   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.countr h2{
-    font-family: 'Ubermovebold';
-    
-    font-weight: 700;
-    line-height: 44px;
-    letter-spacing: normal;
-}
-.countr a{
-    color: black;
-    cursor: pointer;
-    font-family: 'Ubermovetextmedium';
-    font-weight: 500;
-    margin-top: 50px;
-}
+
 #list .displayon p{
     color: black;
     cursor: pointer;
@@ -786,42 +812,22 @@ body,html{
     line-height: 20px;
     font-weight: 900;
     color: black;
-    text-decoration: underline;
+    
+    margin: 0;
     
     
+}
+.in-between{
+    height: 80px;
 }
 @media(min-width:900px){
 
     .near img{
         height: 100%;
-        height: 30vh;
+        height: 38vh;
     }
-    .me h3{
-        font-size: 36px;
-    }
-    .me a{
-        font-size:16px ;
-    }
-    .countr h2{
-        font-size: 36px;
-    }
-    .countr a{
-        font-size: 16px;
-    }
-    #list div{
-        font-size: 16px;
-        
-    }
-    #list{
-        gap: 24px 24px;
-    }
-    .me h3{
-        margin: 0;
-    }
-    .listout{
-
-        padding-top: 150px;
-    }
+    
+    
     
     
 }
@@ -854,9 +860,7 @@ body,html{
         margin: 0;
         padding: 0;
     }
-    .countr h2{
-        font-size: 24px;
-    }
+   
     .listout{
         padding-top: 0;
         padding-left: 15px;
@@ -922,51 +926,108 @@ body,html{
     }
 }
 
+
+
+footer{
+    border-top: 1px solid #f3f3f3;
+    margin-top: 78.5px;
+    padding: 32px 0px 74px;
+    background-color: #ffffff;
+    display: block;
+}
+.eats-top{
+    
+    max-width: 1280px;
+    padding: 0 40px;
+    min-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 .eats{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
-    position: relative;
     
     
    
 }
 .uber{
     display: flex;
+    flex: 2;
     flex-direction: column;
-    gap: 192px;
+    align-items: flex-start;
+    gap: 131.9px;
+    
    
 }
-
+.head-uber {
+    margin-bottom: 64px;
+    width: auto;
+}
 .icon{
     display: flex;
     flex-direction: row;
     gap: 16px;
+    flex-flow: row wrap;
+    margin: 0;
     
-}
-.first{
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    font-family: 'Ubermovetext';
-    font-weight: 500px;
-    
+    padding: 0;
+    height: 42px;
     
 }
 
+.second{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    
+}
+.second ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.second li{
+    display: block;
+    
+}
+.second li,.third li{
+    font-size: 16px;
+    font-family: 'Ubermovetext',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 16px;
+
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    
+}
+.icon .apple{
+    width: auto;
+    height: 40px;
+    
+}
 .icon .google{
     
     width: 134.2px;
+    height: 40px;
 }
 .third  img{
-    width: 18px;
-    height: 100%;
-    max-height: 15px;
-    margin-right: 9px;
+    width: 16px;
+    height: 16px;
+    color: black;
+    flex: none;
+    margin-right: 8px;
     justify-content: center;
     align-items: center;
+    justify-items: center;
     
 }
 
@@ -978,7 +1039,6 @@ body,html{
 .eats a, .privacy a, .site a{
     text-decoration: none;
     color: black;
-    line-height: 40px;
    
     
     
@@ -986,128 +1046,125 @@ body,html{
 a:hover{
     text-decoration: underline;
 }
-
+.nex-line{
+    background-color:#f3f3f3;
+    margin: 40px 0;
+    border: none;
+    height: 1px;
+}
 @media(max-width:431px){
-    .eats{
-        margin-top: 70px;
-    }
-    
+   
 
 }
 @media(min-width:1200px){
-  .eats{  
-   
-    width: 100%;
-    max-width: 65.2%;
-    margin: 0 auto;
-    
-}
-.social{
+  .social{
     position: relative;
-    top: -2px;
-}
-.baseuber{
-    margin-top:-4px ;
-    margin-left: -1px;
-}
-.icon{
-    margin-left: -1.5px;
-}
-.first{
-    width: 100%;
-    max-width: 45.2%;
-    gap: 105px;
-    margin-bottom: 2px;
+    top: -6px;
+  }
+  .privacy{
     position: relative;
-}
-.second ul{
-    
-    margin-left: -58px;
-    
-}
-.lines{
-    padding-top: 7px;
-    padding-bottom: 30px;
-}
-.eats{
+    top: -1px;
+  }
+  .eats{
+    position: relative;
+    top: 42px;
+  }
+  .third{
+    position: relative;
     top: -16px;
-}
-.privacy{
-    margin-bottom: 3px;
-}
+  }
+  .third img{
+    position: relative;
+    top: 2px;
+  }
 
 }
 @media(max-width:900px){
-    footer{
-        padding: 20px;
-    }
-    .eats{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-       margin: 0;
-        
-        text-align: left;
-        align-items: flex-start;
+    
+
+
+    
+}
+
+
+
+.footer{
+    display: flex;
 
 }
-.uber{
-    gap: 20px;
-}
-.first{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-}
-    
-}
 .social{
-    
+    flex: none;
+    display: flex;
+    flex-direction: row;
+}
+.social-img{
+    display: flex;
 }
 .social svg{
     width: 16px;
     height: 16px;
-    margin-right:20px ;
-}
-
-.foot{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   
     
-   
-    }
+}
+.space-1{
+    width: 24px;
+    height: 1px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+.space-2{
+    width: 40px;
+    height: 1px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+.gap-making{
+    flex: 1 0 36px;
+}
 .privacy {
     display: flex;
     flex-direction: row;
+    
+}
+.privacy  a{
     font-size: 14px;
-    font-family: 'Ubermovetext';
-    font-weight: 400;
-    line-height: 0px;
+    font-family: 'Ubermovetext',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-weight: normal;
+    line-height: 10px;
+    display: flex;
+   
+}
+
+.site-bottom{
+    display: flex;
 
 }
-.privacy li a{
-    line-height:20px;
+.space-maker{
+    flex: 1 0 36px;
 }
-
-
-
 .site{
     display: flex;
     flex-direction: row;
-    text-align: right;
-    justify-content: right;
     font-size: 14px;
-    font-family: 'Ubermovetext';
+    line-height: 20px;
+    font-weight: normal;
+    font-family: 'Ubermovetext',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
     letter-spacing: normal;
     
    
     
 }
-.line{
+.space-3{
+    width: 40px;
+    height: 1px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+/*.line{
     border-top-width: 1px;
    border-top-style: solid;
    border-top-color: rgb(240, 240, 240);
@@ -1119,79 +1176,442 @@ a:hover{
     border-top-color: rgb(240, 240, 240);
     width: 65%;
     margin: 0 auto;
-}
+}*/
 
 @media(max-width:412px){
     
-    .foot{
-        gap: 30px;
-    }
-    .footer{
-        padding: 34px 16px 100px;
-    }
-    .site{
-        padding-bottom: 10px;
-    }
     
     
 }
 @media(min-width:900px){
-    footer{
-        margin-top: 64px;
-    }
-    .linemod{
-        padding-top: 40px;
-        padding-bottom: 77px;
-    }
-    .footer{
-        width: 100%;
-        max-width: 65.3%;
-        margin: 0 auto;
-        
-    }
-    .site{
-        gap: 39px;
-    }
-    .privacy{
-        gap: 40px;
-    }
+   
     
+   
 
     
 }
 @media(max-width:900px){
-    .footer{
+   
+}
+@media(max-width:768px){
+
+}
+@media(max-width:1024px){
+    .ubereat{
+        padding-left: 18px;
+        padding-right: 16px;
+        height: 52px;
+        
+        
+    }
+    .threeline svg{
+        margin-right: 14px;
+
+    }
+    .up{
+        padding: 8px 12px;
+    }
+    .uberheading img{
+         width: 89px;
+    }
+    
+    .ups{
+        white-space: nowrap;
+    }
+    .ins{
+        display: none;
+    }
+    .human{
+        display: block;
+        position: relative;
+        top: -11px;
+    }
+    
+    .sidebar{
+        height: 46px;
+        
+    }
+    .sign{
+        gap: 12px;
+    }
+    .sidebar{
+        
+        margin-top: -6px;
+        
+    }
+    .mains{
+        top: 80px;
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+        max-width:max-content;
+        padding: 0 16px;
+        
+    }
+    .linears{
         display: flex;
         flex-direction: column;
+    }
+    .order-2 h1{
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: normal;
+        font-weight: 700;
+        font-family: 'Ubermovebold',sans-serif;
+        margin-bottom: 25px;
+        white-space: nowrap;
+    }
+    .location-2{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid transparent;
+        justify-content:flex-start;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+        background: white;
+        position: sticky;
+        padding-left: 4px;
+        
+        
+    }
+    .location-2 .locationimage{
+        margin: 12px;
+        height: 24px;
+        width: 24px;
+        fill: currentColor;
+        flex: none;
+        justify-content: center;
+        display: flex;
+    }
+    .location-2 .text input{
+        border: none;
+       
+    }
+    .location-2  .text{
+        font: inherit;
+        color: inherit;
+        border: none;
+        letter-spacing: inherit;
+        width: 100%;
+        max-width: fit-content;
+        
+       
+    
+    }
+    .location-2 .loca::placeholder{
+        color: #5f5e5e;
+        line-height: 24px;
+        font-size: 16px;
+        font-family: 'Ubermovetextmedium';
+    }
+    
+    .delivery-2{
+        display: flex;
+        flex-direction: row;
+     align-items: center;
+    border: 2px solid transparent;
+    background: white;
+    width: 100%;
+    height: 56px;
+    padding-left: 4px;
+    
+    
+}
+.deliveryone-2{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+   
+    
+    
+}
+.deliverytwo-2{
+    display: flex;
+    flex: 0.1;
+}
+.deliveryone-2 .clockimage-2{
+    
+    margin: 10px;
+}
+.deliveryone-2 .textsize-2 input{
+   align-items: center;
+   border:none ;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+}
+.deliver::placeholder{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: black;
+    font-family: 'Ubermovetextmedium';
+    width: 100%;
+    max-width: 90px;
+    
+
+}
+
+.search-2{
+    align-items: center;
+    align-content: center;
+    border: none;
+    background: black;
+    border-radius: 8px;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.search-2 button{
+    border: none;
+    letter-spacing: normal;
+    background: black;
+    color: white;
+    font-family: 'Ubermovetextmedium';
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 16.5px;
+    padding-right: 16.5px;
+    
+}
+
+.signs-2 p{
+    font-family: 'Ubermovetextmedium';
+    letter-spacing: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    font-size: 14px;
+    font-weight: 500;
+   
+    color: rgb(0, 0, 0);
+}
+.signs-2 a{
+    font-family: 'Ubermovetextmedium';
+    color: rgb(0, 0, 0);
+    line-height: 16px;
+    letter-spacing: normal;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+    .main-aria{
+        display: none;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .container2 img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center center;
+
+    }
+    
+    /*.sidebar{
+        display: none;
+    }
+    .banner{
+        display: none;
+    }*/
+    .banner{
+        
+       
+    }
+    .listofpicture{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 16px;
+    }
+    .listofpicture img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 4px;
+        
+    }
+    .listofpicture h2{
+        font-family: 'UberMoveBold',sans-serif;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: normal;
+        font-weight: 700;
         margin: 0;
         
     }
-    .lines{
-        width: 100%;
-        padding: 0;
+
+    .listofpicture a{
+        font-family: 'Ubermovetextmedium';
+        margin-top: 8px;
+        
+        display: block;
+        line-height: 20px;
+        color: rgb(48, 48, 48);
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: normal;
+        font-weight: 500;
+        
     }
-    .foot{
+    .feed, .restaurant{
+        
+        margin-bottom: 36px;
+    }
+    .smallscreen{
+        display: flex;
+    }
+    .bottom-height{
+        height: 40px;
+    }
+    .near-me{
+        height: 0;
+    }
+    .me h3{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+    }
+    .me a{
+        display: none;
+    }
+    .near-img{
+        margin: 16px 0;
+        
+    }
+    .near-img img{
+        height: 25vh;
+        
+        object-fit: cover;
+        object-position: center center;
+    }
+    .list{
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
-        margin: 0;
-        padding: 0;
+        margin: 0 16px;
+    }
+    #list{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
+    .displaynone{
+        display: none;
+    }
+    .displayon{
+        display: flex;
+    
+    }
+    .in-between{
+        height: 48px;
+    }
+
+
+    footer{
+        margin-top: 64.5px;
+        padding: 64px 16px 80px;
+        display: block;
+    }
+
+    .icon{
+        width: 100%;
+        margin-bottom: 65px;
+    }
+    .eats-top{
+       padding: 0;
+      
+    }
+    .uber{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        
+    }
+    .head-uber{
+        margin-bottom: 50px;
+        height: max-content;
+    }
+    .eats{
+        display: flex;
+        flex-direction: column;
+    }
+    .second{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 34px;
+    }
+    .third{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 34px;
+    }
+    .nex-line{
+        background-color: #f3f3f3;
+        margin: 20px 0;
+        border: none;
+        height: 1px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .social{
+        margin-bottom: 40px;
+
+    }
+    .space-1{
+        width: 24px;
+    }
+    .gap-making{
+        flex: 0;
     }
     .privacy{
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        
     }
-    .site{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        text-align: left;
-        gap: 2px;
+    .privacy a{
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 16px;
+        font-weight: normal;
     }
+   .site-bottom{
+    display: flex;
+    flex-direction: column;
+    
+   }
+   .space-maker{
+    flex: 0;
+   }
+   .site{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+   }
+   .siteone p{
+    margin: 0;
+   }
 }
-@media(max-width:768px){
-
+@media(max-width:1024px){
+    
 }
