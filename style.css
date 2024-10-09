@@ -167,14 +167,17 @@ body,html{
     .sign{
         gap: 16px;
     }
+    
+    
+   
+    
+}
+@media(min-width:1441px){
     .sidebar{
         
         margin-top: -4px;
         
     }
-    
-   
-    
 }
 
 @media(max-width:1016px){
@@ -930,7 +933,7 @@ body,html{
 
 footer{
     border-top: 1px solid #f3f3f3;
-    margin-top: 78.5px;
+    margin-top: 78px;
     padding: 32px 0px 74px;
     background-color: #ffffff;
     display: block;
@@ -1075,7 +1078,10 @@ a:hover{
   }
   .third img{
     position: relative;
-    top: 2px;
+    top: 4px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+
   }
 
 }
@@ -1178,25 +1184,179 @@ a:hover{
     margin: 0 auto;
 }*/
 
-@media(max-width:412px){
+@media(max-width:724px) and (min-width:425px){
+    .left{
+        margin: 0;
+    }
+    .human svg{
+       
+        margin-top: 0;
+    }
+    .order-2 {
+        margin-bottom:8px ;
+    }
+    .location-2{
+        padding-left: 0px;
+    }
+    .location-2 .locationimage{
+        margin: 12px 10px 12px 12px ;
+    }
+    .search-2{
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+}
+@media(max-width:320px){
+    .deliverytwo-2 .mark-2{
+        padding-right: 6px;
+    }
+}
+@media(max-width:375px){
+
+    .ubereat{
+        
+        
+        align-items: center;
+        
+        
+    }
+    .location-2{
+        padding-left: 4px;
+    }
+    .location-2 .locationimage{
+        margin: 12px 12px 12px 12px ;
+    }
+    .location-2 .text{
+              position: relative;
+              top: 0px;
+              padding-left: 3px;
+    }
+    .left{
+        
+        margin: 0;
+
+    }
     
-    
+    .search-2{
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+    .deliverytwo-2{
+        padding-right: 5px;
+    }
+    .human svg{
+        position: relative;
+        top:0px;
+    }
+    .order-2{
+        margin-bottom: 8px;
+    }
+    .human{
+        position: relative;
+        top: 0px;
+    }
     
 }
-@media(min-width:900px){
-   
+@media(max-width:424px) and (min-width:376px){
+    .search-2{
+        margin-top: 7px;
+        margin-bottom: 2px;
+    }
+    .location-2{
+        padding-left: 4px;
+    }
+    .location-2 .locationimage{
+        margin: 12px;
+    }
+}
+@media(max-width:769px) and (min-width:426px){
+    .signs-2{
+        margin-top: 2px;
+    }
+    
+}
+@media(max-width:768px) and (min-width:541px) {
+    .human svg{
+        position: relative;
+        top: 4px;
+    }
+    .order-2{
+        margin-bottom: 8px;
+    }
+    .search-2{
+        margin-top: 8px;
+    }
+    
+     .location-2 .locationimage{
+        margin: 12px 10px 12px 12px ;
+    }
     
    
 
+}
+
+@media(min-width:1025px){
+    
+    .location-2{
+        padding-left: 4px;
+    }
+    .location-2 .locationimage{
+        margin: 12px;
+    }
+}
+@media(min-width:769px){
+    .search-2{
+        margin-top: 7px;
+        margin-bottom: 2px;
+    }
+    .location-2 .locationimage{
+        margin: 12px 10px 12px 12px ;
+    }
+    .order-2{
+        margin-bottom: 33px;
+    }
     
 }
-@media(max-width:900px){
-   
-}
-@media(max-width:768px){
+@media(min-width:1024px){
+    .search-2{
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+    .location-2 .locationimage{
+        margin: 12px 10px 12px 12px ;
+    }
+    .order-2{
+        margin-bottom: 0px;
+    }
 
+    
 }
-@media(max-width:1024px){
+@media(max-width:1024px) and (min-width:413px){
+    .human{
+        display: block;
+        position: relative;
+        top: -10px;
+    }
+    .location-2  .text{
+        font: inherit;
+        color: inherit;
+        border: none;
+        letter-spacing: inherit;
+        width: 100%;
+        max-width: fit-content;
+        overflow-x: hidden;
+        position: relative;
+        top: 1px;
+        
+       
+    
+    }
+    .human svg{
+        position: relative;
+        top: 3px;
+    }
+}
+@media(max-width:1024px) {
     .ubereat{
         padding-left: 18px;
         padding-right: 16px;
@@ -1223,8 +1383,7 @@ a:hover{
     }
     .human{
         display: block;
-        position: relative;
-        top: -11px;
+        
     }
     
     .sidebar{
@@ -1246,6 +1405,10 @@ a:hover{
         width: 100%;
         max-width:max-content;
         padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        
         
     }
     .linears{
@@ -1258,7 +1421,7 @@ a:hover{
         letter-spacing: normal;
         font-weight: 700;
         font-family: 'Ubermovebold',sans-serif;
-        margin-bottom: 25px;
+        margin-bottom: 24px;
         white-space: nowrap;
     }
     .location-2{
@@ -1271,18 +1434,19 @@ a:hover{
         height: 56px;
         background: white;
         position: sticky;
-        padding-left: 4px;
+        padding-left: 2px;
         
         
     }
     .location-2 .locationimage{
-        margin: 12px;
+        
         height: 24px;
         width: 24px;
         fill: currentColor;
         flex: none;
         justify-content: center;
         display: flex;
+       
     }
     .location-2 .text input{
         border: none;
@@ -1295,15 +1459,17 @@ a:hover{
         letter-spacing: inherit;
         width: 100%;
         max-width: fit-content;
-        
+        overflow-x: hidden;
+       
        
     
     }
     .location-2 .loca::placeholder{
-        color: #5f5e5e;
+        color: #4b4b4b;;
         line-height: 24px;
         font-size: 16px;
-        font-family: 'Ubermovetextmedium';
+        font-family: 'Ubermovetext',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
     }
     
     .delivery-2{
@@ -1332,15 +1498,23 @@ a:hover{
     flex: 0.1;
 }
 .deliveryone-2 .clockimage-2{
-    
+    position: relative;
+    top: 2px;
     margin: 10px;
 }
+
 .deliveryone-2 .textsize-2 input{
    align-items: center;
    border:none ;
     width: 90px;
     align-items: center;
     justify-content: center;
+    margin-left: 2px;
+    
+}
+.deliveryone-2 .textsize-2{
+    position: relative;
+    top: 1px;
 }
 .deliver::placeholder{
     font-size: 16px;
@@ -1354,6 +1528,11 @@ a:hover{
     
 
 }
+.deliverytwo-2 .mark-2{
+    position: relative;
+    top: 2px;
+    left: 1px;
+}
 
 .search-2{
     align-items: center;
@@ -1362,11 +1541,11 @@ a:hover{
     background: black;
     border-radius: 8px;
     justify-content: center;
-    margin-top: 15px;
+    
     width: 100%;
     height: 56px;
     text-align: center;
-    margin-bottom: 10px;
+    
 
 }
 .search-2 button{
@@ -1436,7 +1615,7 @@ a:hover{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 0 16px;
+        
     }
     .listofpicture img{
         width: 100%;
@@ -1522,8 +1701,8 @@ a:hover{
 
 
     footer{
-        margin-top: 64.5px;
-        padding: 64px 16px 80px;
+        margin-top: 64px;
+        padding: 64px 16px 76px;
         display: block;
     }
 
@@ -1559,7 +1738,11 @@ a:hover{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 34px;
+        margin-bottom: 32px;
+    }
+    .third img{
+        position: relative;
+        top: 4px;
     }
     .nex-line{
         background-color: #f3f3f3;
@@ -1574,7 +1757,7 @@ a:hover{
         width: 100%;
     }
     .social{
-        margin-bottom: 40px;
+        margin-bottom: 44px;
 
     }
     .space-1{
@@ -1587,11 +1770,13 @@ a:hover{
         display: flex;
         flex-direction: column;
         
+        
     }
+    
     .privacy a{
         line-height: 20px;
         font-size: 14px;
-        margin-bottom: 16px;
+        margin-bottom: 15.5px;
         font-weight: normal;
     }
    .site-bottom{
@@ -1601,6 +1786,7 @@ a:hover{
    }
    .space-maker{
     flex: 0;
+    
    }
    .site{
     display: flex;
@@ -1612,6 +1798,45 @@ a:hover{
     margin: 0;
    }
 }
-@media(max-width:1024px){
+@media(max-width:912px){
+
+    .linears{
+        gap: 8px;
+    }
+    .order-2 h1{
+        white-space: inherit;
+    }
+    .smallscreen{
+        padding: 10px;
+    }
     
+
+}
+@media(max-width:412px) and (min-width:376px){
+    .human{
+        display: block;
+        position: relative;
+        top: -1px;
+    }
+}
+@media(max-width:1440px) and (min-width:1024px){
+    .deliveryone .clockimage{
+        position: relative;
+        top: 1px;
+    }
+    .deliveryone .textsize{
+        position: relative;
+        top: 2px;
+    }
+    .deliverytwo .mark{
+        position: relative;
+        top: 1px;
+    }
+    .location >div{
+        position: relative;
+        top: 1px;
+    }
+    .sidebar{
+        margin-top: -3px;
+    }
 }
