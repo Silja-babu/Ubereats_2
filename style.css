@@ -1,15 +1,15 @@
 
 @font-face{
     font-family: 'Ubermovebold';
-    src: url(/Ubereats/font/Ubermovebold.woff2);
+    src: url(font/Ubermovebold.woff2);
 }
 @font-face{
     font-family: 'Ubermovetext';
-    src: url(/Ubereats/font/Ubermovetext.woff2);
+    src: url(font/Ubermovetext.woff2);
 }
 @font-face{
     font-family: 'Ubermovetextmedium';
-    src: url(/Ubereats/font/Ubermovetextmedium.woff2);
+    src: url(font/Ubermovetextmedium.woff2);
 }
 
 *{
@@ -373,7 +373,7 @@ body{
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background-image: url(/Ubereat_2/Images/uberheader.png);
+    background-image: url(Images/uberheader.png);
     background-position: center center;
     width: 100%;
     background-repeat: no-repeat;
